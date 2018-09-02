@@ -1,0 +1,24 @@
+{
+  "name": "js-algorithms",
+  "version": "1.0.0",
+  "description": "Dremy's javascript algorithms study",
+  "main": "index.js",
+  "repository": "https://github.com/DremyGit/js-algorithms.git",
+  "author": "Dremy <dremy@dremy.cn>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint ./src --fix",
+    "test": "jest",
+    "coverage": "jest --coverage && open ./coverage/lcov-report/index.html"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.4.2",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^23.5.0",
+    "regenerator-runtime": "^0.12.1"
+  }
+}

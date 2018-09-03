@@ -1,0 +1,19 @@
+sudu: false
+
+language: node_js
+
+node_js:
+  - 6
+  - 8
+  - 10
+
+before_script:
+  - npm install -g yarn
+
+install:
+  - yarn
+  - yarn add --global codecov
+
+script: yarn test -- --coverage
+
+after_success: codecov

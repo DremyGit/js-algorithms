@@ -18,6 +18,7 @@ describe('Queue', () => {
   });
   it('should peek data from queue', () => {
     const queue = new Queue();
+    expect(queue.peek()).toBeNull();
 
     queue.enqueue(1);
     queue.enqueue(2);

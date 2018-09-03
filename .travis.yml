@@ -7,13 +7,8 @@ node_js:
   - 8
   - 10
 
-before_script:
-  - npm install -g yarn
+script: yarn test --coverage
 
-install:
-  - yarn
+after_success:
   - yarn global add codecov
-
-script: yarn test -- --coverage
-
-after_success: codecov
+  - codecov
